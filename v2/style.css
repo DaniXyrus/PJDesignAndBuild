@@ -226,7 +226,7 @@ footer {
   opacity: 1;
   animation-duration: 1s;
   animation-name: example;
-  animation-iteration-count: 15;
+  animation-iteration-count: infinite;
 }
 
 @keyframes example {
