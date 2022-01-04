@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --bs-primary: #016bbf;
+  --bs-primary-rgb: 1, 107, 191;
+  --bs-light-blue: #6bdefb;
+  --bs-light-blue-rgb: 107, 222, 251;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-padding-top: 70px; /* height of sticky header */
+}
+
+.text-playfair {
+  font-family: 'Playfair Display', serif;
+}
 
 #spinner {
   position: fixed;
@@ -17,7 +37,7 @@
 }
 
 #home {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url('img/bg-1.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(90deg, rgba(1, 107, 191, 0.05), rgba(1, 107, 191, 0.3)), url('img/bg-3.jpg') center/cover no-repeat fixed;
   padding-top: 175px !important;
 }
 
@@ -67,4 +87,129 @@ footer {
 
 .fab.fa-facebook-f:hover {
   color: #3b5998
+}
+
+@media (min-width: 768px) {
+  .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+  }
+  @keyframes slideIn {
+      0% {
+          transform: translateY(1rem);
+          opacity: 0;
+      }
+      
+      100% {
+          transform: translateY(0rem);
+          opacity: 1;
+      }
+      
+      0% {
+          transform: translateY(1rem);
+          opacity: 0;
+      }
+  }
+  
+  @-webkit-keyframes slideIn {
+      0% {
+          -webkit-transform: transform;
+          -webkit-opacity: 0;
+      }
+      
+      100% {
+          -webkit-transform: translateY(0);
+          -webkit-opacity: 1;
+      }
+      
+      0% {
+          -webkit-transform: translateY(1rem);
+          -webkit-opacity: 0;
+      }
+  }
+  
+  .slideIn {
+      -webkit-animation-name: slideIn;
+      animation-name: slideIn;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.95) !important;;
+  }
+  .animate {
+      animation-duration: 0.3s;
+      -webkit-animation-duration: 0.3s;
+      animation-fill-mode: both;
+      -webkit-animation-fill-mode: both;
+  }
+  @keyframes slideIn {
+      0% {
+          transform: translateY(-0.5rem);
+          opacity: 0;
+      }
+      
+      100% {
+          transform: translateY(0rem);
+          opacity: 1;
+      }
+      
+      0% {
+          transform: translateY(-0.5rem);
+          opacity: 0;
+      }
+  }
+  
+  @-webkit-keyframes slideIn {
+      0% {
+          -webkit-transform: transform;
+          -webkit-opacity: 0;
+      }
+      
+      100% {
+          -webkit-transform: translateY(0);
+          -webkit-opacity: 1;
+      }
+      
+      0% {
+          -webkit-transform: translateY(-0.5rem);
+          -webkit-opacity: 0;
+      }
+  }
+  
+  .slideIn {
+      -webkit-animation-name: slideIn;
+      animation-name: slideIn;
+  }
+
+  .header-text {
+    width: 100% !important;
+  }
+}
+
+.angle-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.angle-down:hover {
+  opacity: 1;
+  animation-duration: 1s;
+  animation-name: example;
+  animation-iteration-count: 15;
+}
+
+@keyframes example {
+  0% {transform: translateY(-10px);opacity: 0;}
+  100% {transform: translateY(10px);opacity: 1;}
+}
+
+.header-text {
+  background: rgba(1, 107, 191, 1);
+  width: 60%;
 }
