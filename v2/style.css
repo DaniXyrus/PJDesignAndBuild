@@ -19,6 +19,16 @@ html {
   font-family: 'Playfair Display', serif;
 }
 
+.bg-light-blue {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-blue-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-light-blue {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-blue-rgb), var(--bs-text-opacity)) !important;
+}
+
 #spinner {
   position: fixed;
   width: 100%;
@@ -37,7 +47,7 @@ html {
 }
 
 #home {
-  background: linear-gradient(90deg, rgba(1, 107, 191, 0.05), rgba(1, 107, 191, 0.3)), url('img/bg-3.jpg') center/cover no-repeat fixed;
+  background: linear-gradient(90deg, rgba(1, 107, 191, 0.05), rgba(1, 107, 191, 0.3)), url('img/bg-3.jpg') center/cover no-repeat;
   padding-top: 175px !important;
 }
 
