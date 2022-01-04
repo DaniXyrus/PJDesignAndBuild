@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="images/logo.png" />
+    <title>PJ Design and Build</title>
+    <!-- Font awesome icon -->
+    <script src="https://kit.fontawesome.com/952cbe8392.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet"> 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+</head>
+
+<body>
+    <button class="scrollToTopBtn"><i class='bx bx-chevrons-up'></i></button>
+    <!-- header -->
+    <header>
+        <section>
+            <span><a href="#contact"><i class="fa fa-comment"></i> 24/7 Support</a></span>
+            <span><a href="emailto:support@websitename.com"><i class="fa fa-envelope"></i> pjdesignandbuild@gmail.com</a></span>
+            <span><a href="tel:0000000000"><i class="fa fa-phone"></i> +(60) 11- 6400 9181</a></span>
+        </section>
+        <section>
+            <span><a href="#"><i class="fab fa-instagram"></i> Instagram</a></span>
+            <span><a href="#"><i class="fa fa-whatsapp"></i> Whatsapp</a></span>
+            <span><a href="#" class="btn1">Consultation</a></span>
+        </section>
+    </header>
+    
+    <!--NAVIGATION-->
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" id="logo"><img src="images/logo.png" alt=""></a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Project &nbsp;<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="sub-dropdown">
+                        <button class="sub-dropbtn">Agriculture & Farming</button>
+                    </div>
+                    <div class="sub-dropdown">
+                      <button class="sub-dropbtn">Agriculture & Farming</button>
+                  </div>
+                  <div class="sub-dropdown">
+                    <button class="sub-dropbtn">Agriculture & Farming</button>
+                </div>
+                </div>
+            </div>
+            <a href="#about">About Us</a>
+            <a href="#" id="active">Home</a>
+            <a href="javascript:void(0);" style="font-size:25px;" class="icon" onclick="NavBar()">&#9776;</a>
+        </div>
+        <div id="navbar">
+            <a href="#home" id="logo2" style="float:left;"><img src="images/logo.png" alt=""></a>
+            <a href="#contact">Contact</a>
+            <div class="dropdown">
+                <button class="dropbtn">Project <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <div class="sub-dropdown">
+                        <button class="sub-dropbtn"> Agriculture & Farming </button>
+                    </div>
+                    <div class="sub-dropdown">
+                        <button class="sub-dropbtn"> Home electronics </button>
+                    </div>
+                    <div class="sub-dropdown">
+                        <button class="sub-dropbtn"> Professional services </button>
+                    </div>
+                </div>
+            </div>
+            <a href="#about">About Us</a>
+            <a href="#" id="active">Home</a>
+        </div>
+    </nav>
+
+    
+    <div class="banner" id="home">
+        <div class="container">
+            <div class="Hero-head">
+                <h3 class="home-parallax" data-speed="-1">interior designer</h3>
+                <h2 class="home-parallax" data-speed="-2">PJ DESIGN and BUILD</h2>
+                <p>We will help you to make an elegant and luxurious interior design by our professional interior design </p>
+                <button type="button" class="fill">About Us</button>
+                <button type="button" class="slide">
+                  <div>See Projects</div>
+                  <i class="icon-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- footer -->
+    <div class="footer">
+        <div class="row">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#program">About us</a></li>
+                <li><a href="#about">Project</a></li>
+                <li><a href="#test">Contact</a></li>
+            </ul>
+        </div>
+        <p class="copyright">Copyright © 2022 PJ DESIGN AND BUILD. All rights reserved. <br />​This website owned by PJ DESIGN AND BUILD</p>
+    </div>
+    </footer>
+    <!-- end of footer -->
+    <script>
+        //TOP NAVIGATION
+        function NavBar() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("navbar").style.top = "0";
+                document.getElementById("roll_back").style.display = "flex";
+            } else {
+                document.getElementById("navbar").style.top = "-100px";
+                document.getElementById("roll_back").style.display = "none";
+            }
+        }
+    </script>
+    <script>
+      //-- scroll up --//
+      var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Do something on scroll
+        var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight;
+        if (rootElement.scrollTop / scrollTotal > 0.8) {
+            // Show button
+            scrollToTopBtn.classList.add("showBtn");
+        } else {
+            // Hide button
+            scrollToTopBtn.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+      }
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+    </script>
+    <script>
+        //common reveal options to create reveal animations
+        ScrollReveal({
+          //reset: true,
+          distance: '60px',
+          duration: 2500,
+          delay: 400
+        });
+
+        //target elements, and specify options to create reveal animations
+        ScrollReveal().reveal('.copyright, .row', { delay: 500, origin: 'left' });
+        ScrollReveal().reveal('', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.banner', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.Hero-head, .slide, .fill', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+    <script>
+      document.querySelector('.Hero-head').onmousemove = (e) =>{
+
+      document.querySelectorAll('.home-parallax').forEach(elm =>{
+
+        let speed = elm.getAttribute('data-speed');
+
+        let x = (window.innerWidth - e.pageX * speed) / 90;
+        let y = (window.innerHeight - e.pageY * speed) / 90;
+
+        elm.style.transform = `translateX(${y}px) translateY(${x}px)`;
+
+      });
+
+      };
+
+
+      document.querySelector('.Hero-head').onmouseleave = (e) =>{
+
+      document.querySelectorAll('.home-parallax').forEach(elm =>{
+
+        elm.style.transform = `translateX(0px) translateY(0px)`;
+
+      });
+
+      };
+    </script>
+</body>
+
+</html>
