@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="img/logo-transparent.png">
   <title>PJ Design & Build</title>
 </head>
 <body>
@@ -88,18 +89,18 @@
   </section>
 
 
-  <section id="projects" class="min-vh-100 p-1 p-md-5">
+  <section id="projects" class="p-1 p-md-5">
 
-    <div class="container">
+    <div class="container row mx-auto">
 
-      <div class="d-flex justify-content-end mt-3">
-        <div class="text-end p-3 text-white rounded mb-3 header-text shadow-lg bg-light-blue-75">
+      <div class="d-md-none col-12 col-md-4 mt-3">
+        <div class="text-end p-3 text-white rounded mb-3 shadow-lg bg-light-blue-75">
           <h1 class="text-playfair">Our Projects</h1>
           <p class="lead">At PJ Design & Build, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem assumenda vero magni, quod veritatis placeat ea delectus illum ex, voluptates ullam doloremque temporibus pariatur nam totam animi ipsum facilis.</p>
         </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3">
+      <div class="col-12 col-md-8 row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 mb-3">
 
         <div class="col">
           <img src="img/bg-1.jpg" alt="" class="img-thumbnail">
@@ -118,14 +119,17 @@
         </div>
         <div class="col">
           <img src="img/bg-1.jpg" alt="" class="img-thumbnail">
-        </div>
-        <div class="col">
-          <img src="img/bg-2.png" alt="" class="img-thumbnail">
         </div>
         
       </div>
-
       
+      <div class="d-none d-md-inline col-12 col-md-4 mt-3">
+        <div class="text-end p-3 text-white rounded mb-3 shadow-lg bg-light-blue-75">
+          <h1 class="text-playfair">Our Projects</h1>
+          <p class="lead">At PJ Design & Build, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem assumenda vero magni, quod veritatis placeat ea delectus illum ex, voluptates ullam doloremque temporibus pariatur nam totam animi ipsum facilis.</p>
+          <button class="btn btn-outline-light">VIEW MORE</button>
+        </div>
+      </div>
 
     </div>
 
@@ -136,9 +140,12 @@
 
     <div class="container">
 
-      <h1 class="text-playfair">Get To Know Us</h1>
-      <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe nam error repellat, et dolores!</p>
-      <button class="btn btn-primary">READ MORE ABOUT US</button>
+      <div class="header-text mt-3">
+        <h1 class="text-playfair">Get To Know Us</h1>
+        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe nam error repellat, et dolores!</p>
+        <button class="btn btn-primary">READ MORE ABOUT US</button>
+      </div>
+      
       
     </div>
 
