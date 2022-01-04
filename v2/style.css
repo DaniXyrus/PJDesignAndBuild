@@ -13,6 +13,7 @@
 
 html {
   scroll-padding-top: 70px; /* height of sticky header */
+  scroll-behavior: smooth;
 }
 
 .text-playfair {
