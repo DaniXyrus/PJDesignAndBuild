@@ -58,3 +58,13 @@ nav.sticky {
 footer {
   font-size: 0.75em;
 }
+
+.fab.fa-instagram:hover {
+  background: -webkit-linear-gradient(#8a3ab9, #fccc63, #fbad50, #cd486b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fab.fa-facebook-f:hover {
+  color: #3b5998
+}
