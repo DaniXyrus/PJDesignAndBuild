@@ -39,6 +39,10 @@ html {
   background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.min-vh-50 {
+  min-height: 50vh !important;
+}
+
 #spinner {
   position: fixed;
   width: 100%;
@@ -234,5 +238,9 @@ footer {
 }
 
 #projects {
-  background: linear-gradient(90deg, rgba(1, 107, 191, 0.05), rgba(1, 107, 191, 0.3)), url('img/bg-4.jpg') center/cover no-repeat;
+  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.05), rgba(var(--bs-primary-rgb), 0.3)), url('img/bg-4.jpg') center/cover no-repeat;
+}
+
+#about {
+  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.6), rgba(var(--bs-primary-rgb), 0.01)), url('img/bg-5.jpg') center/cover no-repeat;
 }
