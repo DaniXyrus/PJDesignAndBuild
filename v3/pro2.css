@@ -309,7 +309,7 @@ footer {
 }
 
 .poster {
-    content: url(img/bg-1.jpg);
+    content: url(img/pro2/06.png);
     width: 100%;
 }
 
@@ -393,6 +393,7 @@ hr {
     float: right;
     width: 60%;
     padding-top: 100px;
+    padding-bottom: 15px;
     text-align: center;
 }
 

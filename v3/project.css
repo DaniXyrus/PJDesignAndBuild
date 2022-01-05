@@ -270,15 +270,11 @@ footer {
   background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.05), rgba(var(--bs-primary-rgb), 0.3)), url('img/bg-4.jpg') center/cover no-repeat;
 }
 
-#about {
-  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.6), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-7.jpg') center/cover no-repeat;
-}
-
-
 .portfolio {
   display: flex;
   flex-wrap: wrap;
   min-width: 320px;
+  margin-top: 40px;
 }
 
 .portfolio h2 {
