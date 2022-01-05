@@ -44,7 +44,7 @@ html {
 
 ::-webkit-scrollbar {
     height: 12px;
-    width: 8px;
+    width: 5px;
     background: #000;
 }
 
@@ -431,39 +431,99 @@ header .btn1 {
 }
 
 .banner {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/back.jpg");
     flex-direction: column;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: animate 60s linear infinite 0s;
+}
+
+@keyframes animate{
+    0%,100%{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pro.png) center/cover no-repeat fixed;
+    }
+    25%{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pro8.png) center/cover no-repeat fixed;
+    }
+    50%{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pro3.png) center/cover no-repeat fixed;
+    }
+    75%{
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/pro7.png) center/cover no-repeat fixed;
+    }
+}
+
+.topic {
+    padding: 2.5vw 0 0;
+    color: black;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic h3 {
+    font-weight: bold;
+    font-size: 0.988vw;
+    letter-spacing: 0.188vw;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 54px;
+}
+
+.btn2 {
+    text-align: center;
+    outline: none !important;
+    color: var(--white);
+    padding: 15px 25px;
+    border-radius: 2px;
+    margin-bottom: 54px;
+}
+
+.btn2 {
+    background-color: var(--primary);
+}
+
+.btn2:hover {
+    background-color: var(--secondary);
+}
+
+@media (max-width:1000px){
+    .topic{
+        padding: 2.5vw 0 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .topic h3 {
+        font-size: 14px;
+        line-height: normal;
+        margin-bottom: 38px;
+    }
 }
 
 .Hero-head {
-    padding: 12.5vw 0 0;
+    padding: 7.5vw 0 0;
     color: white;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
+    left: 0;
 }
 
 .Hero-head h3 {
     font-weight: bold;
     font-size: 0.988vw;
-    margin-bottom: 3.75vw;
+    margin-bottom: 1.75vw;
     letter-spacing: 0.188vw;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 4em;
 }
 
 .Hero-head h2 {
     font-family: "Playfair Display", serif;
     margin: 0;
     font-weight: 300;
-    margin-bottom: 0.6em;
-    font-size: 5.938vw;
+    margin-bottom: 1.75vw;
+    font-size: 3.938vw;
 }
 
 .Hero-head p {
@@ -472,7 +532,6 @@ header .btn1 {
     font-size: 19px;
     display: inline-block;
     position: relative;
-    margin-bottom: 3.75vw;
 }
 
 .Hero-head p:after {
