@@ -74,9 +74,25 @@ html {
 }
 
 #home {
-  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-1.gif') center/cover no-repeat fixed;
   padding-top: 175px !important;
+  animation: animate 60s linear infinite 0s;
 }
+
+@keyframes animate{
+  0%,100%{
+    background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-1.gif') center/cover no-repeat fixed;
+  }
+  25%{
+    background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-4.gif') center/cover no-repeat fixed;
+  }
+  50%{
+    background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-6.gif') center/cover no-repeat fixed;
+  }
+  75%{
+    background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-8.gif') center/cover no-repeat fixed;
+  }
+}
+
 
 nav {
   transition: 0.6s;
