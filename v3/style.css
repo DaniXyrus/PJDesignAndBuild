@@ -293,9 +293,16 @@ footer {
   right: 0
 }
 
-iframe {
+iframe.map {
   position: relative;
   top: 0;
   left: 0;
   z-index: 1;
+}
+
+.form-control {
+  background: inherit !important;
+  border: none;
+  border-bottom: 3px var(--bs-light-brown) solid;
+  color: white;
 }
