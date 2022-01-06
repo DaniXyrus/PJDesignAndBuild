@@ -273,3 +273,29 @@ footer {
 #about {
   background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.6), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-7.jpg') center/cover no-repeat;
 }
+
+#contactHeader {
+  padding-top: 175px !important;
+  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.001), rgba(var(--bs-primary-rgb), 0.01)), url('img/3d-design-6.gif') center/cover no-repeat fixed;
+}
+
+#contactHeader-2 {
+  padding-top: 140px !important;
+}
+
+#contactMap-2 {
+  background: linear-gradient(90deg, rgba(var(--bs-primary-rgb), 0.1), rgba(var(--bs-primary-rgb), 0.3)), url('img/bg-4.jpg') center/cover no-repeat;
+}
+
+.contact-map-text {
+  position: absolute;
+  z-index: 2;
+  right: 0
+}
+
+iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
