@@ -352,7 +352,10 @@ footer {
   }
   .card .content span:last-child {
     font-size: 13px;
-  }  
+  }
+  .portfolio {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -360,11 +363,10 @@ footer {
   width: 100%;
   margin: 6px;
   }
-  
   .card .content span:first-child {
     font-size: 12px;
   }
   .card .content span:last-child {
     font-size: 12px;
-  }  
+  } 
 }
