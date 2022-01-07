@@ -64,39 +64,24 @@
         <div class="taman-background">
             <div class="taman-intro">
                 <div class="taman-left">
-                    <p1><b>CONTACT FORM</b></p1><br>
-                    <p3>#1 Professional Interior Design / Cabinets Manufacturer<br></p3>
-                    <p2>Contact us today, and we will get back to you soon<br></p2>
-                    <img src="img/pro1/01.png">
+                    <p1><b>PJ DESIGN AND BUILD</b></p1><br>
+                    <p3>#1 Professional Interior Design / Cabinets Manufacturer<br></p3><br>
+                    <p2>T2A-13A-08, 3 Towers, 296, Jalan Ampang, 50450 Kuala Lumpur, Malaysia.<br></p2><br>
+                    <p4>pjdesignandbuild@gmail.com<br></p4><br>
+                    <p4>Office : +603 2720 2967<br>Hp : +6012 3239 100</p4>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.209565589497!2d101.68978922676553!3d3.1467845133387033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49d3e30988d7%3A0x464a4b7fda23c09a!2sKuala%20Lumpur%20City%20Centre%2C%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1641467265393!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-                    <div id="container">
-                        <form action="#" method="post" id="contact_form">
-                          <div class="name">
-                            <label for="name"></label>
-                            <input type="text" placeholder="Name" name="name" id="name_input" required>
-                          </div>
-                          <div class="email">
-                            <label for="email"></label>
-                            <input type="email" placeholder="Email" name="email" id="email_input" required>
-                          </div>
-                          <div class="telephone">
-                            <label for="name"></label>
-                            <input type="number" placeholder="Phone Number" name="telephone" id="telephone_input" required>
-                          </div>
-                          <div class="subject">
-                            <label for="subject"></label>
-                            <input type="text" placeholder="Subject" name="subject" id="subject_input" required>
-                          </div>
-                          <div class="message">
-                            <label for="message"></label>
-                            <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
-                          </div>
-                          <div class="submit">
-                            <input type="submit" value="Send Message" id="form_button" />
-                          </div>
-                        </form><!-- // End form -->
-                      </div><!-- // End #container -->
+            
+                <form action="mail.php" method="post" id="form">
+                    <h1>CONTACT FORM</h1>
+                    <p>Fill up the online form below and we will get back to you soon</p>
+                    <input type="text" id="name" name="name" placeholder="Name:" required><br>
+                    <input type="text" id="phone" name="phone" placeholder="Phone Number:" onkeypress="return isNumberKey(event)" required><br>
+                    <input type="text" id="address" name="address" placeholder="Address:" required><br>
+                    <input type="text" id="email" name="email" placeholder="Email:" required><br>
+                    <textarea id="message" name="message" rows="4" cols="50" placeholder="Write a message"></textarea><br>
+                    <input type="submit" value="Submit" id="submit"><br>
+                  </form>
                 
                 <hr>
             </div>
