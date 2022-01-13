@@ -15,6 +15,41 @@
 </head>
 
 <body>
+    <!--Floating Button-->
+ <span class="chat-icon btnblinkanim"></span>
+ <div class="main-chat-box">
+   <ul class="chatBox">
+     <!--WhatsApp Chat-->
+     <li>
+       <a href="https://api.whatsapp.com/send?phone=60199591926" target="_blank">
+         <span class="icon-circle">
+           <img src="img/whatsapp.png" alt="WhatsApp">
+         </span>
+         <abbr>WhatsApp</abbr>
+       </a>
+     </li>
+     <!--Facebook Messenger Chat-->
+     <li>
+       <a href="tel:+60199591926" target="_blank">
+         <span class="icon-circle">
+           <img src="img/icon-call.png" alt="Call">
+         </span>
+         <abbr>Call Us</abbr>
+       </a>
+     </li>
+     <!--Email Chat-->
+     <li>
+       <a href="mailto:teksikelantan@gmail.com" target="_blank">
+         <span class="icon-circle">
+           <img src="img/message-closed-envelope.png" alt="Email">
+         </span>
+         <abbr>Email Us</abbr>
+       </a>
+     </li>
+   </ul>
+ </div>
+ <!--End Floating Button-->
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top p-4 max-vw-100" aria-label="Fourth navbar example">
         <div class="container">
@@ -156,6 +191,15 @@
         ScrollReveal().reveal('', { delay: 500, origin: 'bottom', interval: 200 });
         ScrollReveal().reveal('', { delay: 500, origin: 'top' });
         ScrollReveal().reveal('.taman-left', { delay: 500, origin: 'left', interval: 200 });
+  </script>
+  <script>
+    $(document).ready(function(){
+        $('.chat-icon').click(function(){
+            $(this).toggleClass('active');
+            $(this).toggleClass('btnblinkanim');
+            $('.main-chat-box').toggle();
+        });
+    });
   </script>
 </body>
 
